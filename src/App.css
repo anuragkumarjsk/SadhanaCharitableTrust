@@ -1,2 +1,8 @@
 .App {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(177, 138, 243,0.2) , rgba(202, 105, 139,0.2));
+}
+a{
+    text-decoration: none;
 }

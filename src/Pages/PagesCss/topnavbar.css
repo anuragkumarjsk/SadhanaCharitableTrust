@@ -1,0 +1,13 @@
+.topnav{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0px 7px 24px rgba(0, 0, 0, 0.16);
+    background-color: aliceblue;
+}
+.navlink{
+   font-size: 18px;
+   padding: 0px 5px;
+}
