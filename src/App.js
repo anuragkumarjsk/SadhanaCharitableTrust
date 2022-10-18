@@ -7,7 +7,12 @@ import Activities from './Pages/Activities';
 import Donate from './Pages/Donate';
 import Volunteer from './Pages/Volunteer';
 import ContactUs from './Pages/ContactUs';
+<<<<<<< HEAD
 import NavBar from './Pages/NavBar';
+=======
+import Success from './Pages/Success';
+import Failiure from './Pages/Failiure';
+>>>>>>> 3aafccd526865e17630369ee763a9f424812e6c6
 
 function App() {
   return (
@@ -20,6 +25,8 @@ function App() {
            <Route path="/donate" element={<Donate />} />
            <Route path="/volunteer" element={<Volunteer />}/>
            <Route path="/contactus" element={<ContactUs />} />
+           <Route path="/success" element={<Success />} />
+           <Route path="/failiure" element={<Failiure />} />
         </Routes>
       </BrowserRouter>
     </div>

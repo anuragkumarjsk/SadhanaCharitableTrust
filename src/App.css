@@ -1,3 +1,25 @@
+@font-face {
+  font-family:'GTWalsheimPro-Thin';
+  src: url('./Assets/Fonts/GTWalsheimPro-Thin.ttf');
+  font-weight: 100;
+}
+@font-face {
+  font-family:'GTWalsheimPro-Regular';
+  src: url('./Assets/Fonts/GTWalsheimPro-Regular.ttf');
+  font-weight: 200;
+}
+@font-face {
+  font-family:'GTWalsheimPro-Medium';
+  src: url('./Assets/Fonts/GTWalsheimPro-Medium.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family:'GTWalsheimPro-Bold';
+  src: url('./Assets/Fonts/GTWalsheimPro-Bold.ttf');
+  font-weight: 700;
+}
+
+
 .App {
   width: 100vw;
   height: 100vh;
