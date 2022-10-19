@@ -11,12 +11,13 @@ import NavBar from './Pages/NavBar';
 import Success from './Pages/Success';
 import Failiure from './Pages/Failiure';
 import TopNavbar from './Pages/TopNavbar';
+import 'react-slideshow-image/dist/styles.css'
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {/* <NavBar/> */}
-        <TopNavbar/>
+        <NavBar/> 
+        {/* <TopNavbar/>  */}
         <Routes>
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/activities" element={<Activities />}/>

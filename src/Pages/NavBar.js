@@ -30,9 +30,6 @@ function NavBar() {
             </ul>
         </div>
     </nav>
-    <section className='hero-section'>
-        <h1>Welcome to Sadhana Charitable Trust</h1>
-    </section>
   </>
   )
 }

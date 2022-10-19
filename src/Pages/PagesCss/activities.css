@@ -1,0 +1,22 @@
+@import "react-slideshow-image/dist/styles.css";
+
+h1{
+    font-size: 30px;
+    color: coral;
+    justify-content: center;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.slide-container{
+    padding: 100px;
+    background-color: whitesmoke;
+       
+}
+
+.activity-img img{
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+
+}

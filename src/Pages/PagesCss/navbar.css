@@ -47,14 +47,14 @@
     display: grid;
     /* background-color: #3b5998; */
     grid-column: 2/3;  /*logo col starts from 2nd col ands ar 3rd col hence 2/3*/
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
+    padding: 3px;
   }
-  
-  
+    
   .logo-img{
-    height: 8rem;
-    border-radius: 4rem;
+    height: 9rem;
+    border-radius: 4.5rem;
   }
 
   .menu-link {
@@ -128,6 +128,8 @@
   .logo,
   .social-media ul{
     height: 8rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .logo-img{
@@ -181,9 +183,9 @@
       height: 7rem;
       width: 100%;
       display: grid;
-      font-size: 15px;
-      align-items: center;
-      justify-content: center;
+      font-size: 10px;
+      align-items: left;
+      justify-content: left;
       grid-column: 3/4;
       color: brown;
     }
