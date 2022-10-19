@@ -1,9 +1,11 @@
 import React,{useEffect,useState} from 'react'
+
 import axios from 'axios'
 import './PagesCss/volunteer.css'
 import { useNavigate } from 'react-router-dom'
 function Volunteer() {  
   const navigate = useNavigate()
+  const [buttondisabled,setbuttondisabled]=useState(true)
   const [formstate,setformstate]=useState({
       name: '',
       contactno: '',
@@ -30,10 +32,25 @@ function Volunteer() {
     })
   }
 
+useEffect(() => {
+  if(formstate.name===''||
+  formstate.contactno=== ''||
+  formstate.email=== ''||
+  formstate.profession===''||
+  formstate.institution=== '')
+  {setbuttondisabled(true)}
+  else
+  {setbuttondisabled(false)}
+
+  return () => {
+  }
+}, [formstate])
+
+
   return (
     <div className='volunteer'>
           <h2 style={{fontFamily:'GTWalsheimPro-Bold',fontSize:'30px'}}>Volunteer Registration form</h2>
-        <form className="form" onSubmit={submitHandler}>
+        <form className="form" >
           <div className='form-field'>
             <label>Name</label><br></br>
             <input placeholder='Enter your name' type="text" name = "name" value = {formstate.name} onChange={changeHandler} />
@@ -55,7 +72,9 @@ function Volunteer() {
             <input placeholder='Enter the name of college or company' type="text" name = "institution" value = {formstate.institution} onChange={changeHandler} />
           </div>
           <div className='form-field'>
-          <button color="blue" type='submit'>Submit</button>
+          <button  className={`btn ${buttondisabled? "btnpassive":"btnactive"}`} type='submit' style={{cursor:'pointer'}}
+           disabled={buttondisabled}
+           onClick={submitHandler}>Submit</button>
           </div>
         </form>
     </div>

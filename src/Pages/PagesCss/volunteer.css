@@ -29,12 +29,20 @@ font-family: 'GTWalsheimPro-Medium';
     font-family: 'GTWalsheimPro-Regular';
 }
 
-.form-field button{
+.form-field .btn{
     margin-left: 10px;
     padding:10px 20px;
-    border-radius: 2px;
-    border: 1px solid black;
-    background-color:aqua;
+    border-radius: 6px;
+    border: 1px solid transparent;
     font-size: 20px;
     font-family: 'GTWalsheimPro-Medium';
+}
+
+.btnpassive{
+    color: rgba(55, 52, 52,0.7);
+    background-color:rgb(204, 214, 225);
+}
+.btnactive{
+    color: white;
+    background-color:rgb(125, 26, 224);
 }
