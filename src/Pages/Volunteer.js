@@ -57,7 +57,7 @@ useEffect(() => {
           </div>
           <div className='form-field'>
             <label>Contact No</label><br></br>
-            <input placeholder='Enter your contact number'type="text" name = "contactno" value = {formstate.contactno} onChange={changeHandler} />
+            <input type="tel" placeholder='Enter your contact number'  pattern="[0-9]{10}"  name = "contactno" value = {formstate.contactno} onChange={changeHandler} />
           </div>
           <div className='form-field'>
             <label>Email</label><br></br>

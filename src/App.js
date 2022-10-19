@@ -7,18 +7,16 @@ import Activities from './Pages/Activities';
 import Donate from './Pages/Donate';
 import Volunteer from './Pages/Volunteer';
 import ContactUs from './Pages/ContactUs';
-<<<<<<< HEAD
 import NavBar from './Pages/NavBar';
-=======
 import Success from './Pages/Success';
 import Failiure from './Pages/Failiure';
->>>>>>> 3aafccd526865e17630369ee763a9f424812e6c6
-
+import TopNavbar from './Pages/TopNavbar';
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <NavBar/>
+        {/* <NavBar/> */}
+        <TopNavbar/>
         <Routes>
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/activities" element={<Activities />}/>
