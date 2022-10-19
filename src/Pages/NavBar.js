@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../Images/logo.jpg'
 import {FaFacebookSquare} from "react-icons/fa"
+import {Link} from 'react-router-dom'
 import './PagesCss/navbar.css'
 
 function NavBar() {
@@ -16,11 +17,11 @@ function NavBar() {
       </div>
       <div className='menu-link'>
         <ul>
-          <li><a href='/' className='active'>Home</a></li>
-          <li><a href='/activities'>Activities</a></li>
-          <li><a href='/donate'>Donate</a></li>
-          <li><a href='/volunteer'>Volunteer</a></li>
-          <li><a href='/contactus'>Contact Us</a></li>
+          <li><Link to='/'><a href='/' className='active'>Home</a></Link></li>
+          <li><Link to='/activities'><a href='/activities'>Activities</a></Link></li>
+          <li><Link to='/donate'><a href='/donate'>Donate</a></Link></li>
+          <li><Link to='/volunteer'><a href='/volunteer'>Volunteer</a></Link></li>
+          <li><Link to='/contactus'><a href='/contactus'>Contact Us</a></Link></li>
         </ul>
       </div>
         {/*Social media links*/}

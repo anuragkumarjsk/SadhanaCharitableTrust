@@ -25,7 +25,7 @@ export default function App() {
       {Images.map((img, ind) => (
         <Carousel.Item className='activity-img' interval={1500} alt='SCTimg'>
         <img className={ind} src={img.url}/>
-        <Carousel.Caption>
+        <Carousel.Caption className="caption">
           <h3>{img.cap}</h3>
         </Carousel.Caption>
         </Carousel.Item>
