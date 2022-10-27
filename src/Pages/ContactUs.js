@@ -1,48 +1,53 @@
 import React from 'react'
-import '../Pages/PagesCss/contact.css'
-import 'bootstrap/dist/css/bootstrap.css';
-import {BsFillTelephoneFill} from "react-icons/bs"
-import {IoIosMailUnread} from "react-icons/io"
-import {FaFacebookSquare} from "react-icons/fa"
-import { Button } from 'react-bootstrap';
+import './PagesCss/contactus.css'
+const img1 = require('../../src/Assets/Images/SCT.jpeg')
 
 function ContactUs() {
-  const submitHandler = () =>{
+  const Teachers = [{name:'Archana',url:require('../../src/Assets/Images/OurTeachers/Archana.jpeg')},
+  {name:'Barsha',url:require('../../src/Assets/Images/OurTeachers/Barsha.jpeg')},
+  {name:'Brundabati',url:require('../../src/Assets/Images/OurTeachers/Brundabati.jpeg')},
+  {name:'Jagabandhu',url:require('../../src/Assets/Images/OurTeachers/jagabandhu.jpeg')},
+  {name:'Jyotish',url:require('../../src/Assets/Images/OurTeachers/Jyotish.jpeg')},
+  {name:'Madhusudan',url:require('../../src/Assets/Images/OurTeachers/Madhusudan.jpeg')},
+  {name:'Megha',url:require('../../src/Assets/Images/OurTeachers/Megha.jpeg')},
+  {name:'Nandini',url:require('../../src/Assets/Images/OurTeachers/Nandini.jpeg')},
+  {name:'Neha',url:require('../../src/Assets/Images/OurTeachers/Neha.jpeg')},
+  {name:'Rosalin',url:require('../../src/Assets/Images/OurTeachers/Rosalin.jpeg')},
+  {name:'Sabita',url:require('../../src/Assets/Images/OurTeachers/Sabita.jpeg')},
+  {name:'Sita',url:require('../../src/Assets/Images/OurTeachers/Sita.jpeg')},
+  {name:'Sonali',url:require('../../src/Assets/Images/OurTeachers/Sonali.jpeg')},
 
-  }
-  return (
-    <div className='contact-us'>
-      <div class="jumbotron">
-        <p className="display-3">We would love to hear from you
-        <BsFillTelephoneFill className='phone-icon'/>
-        <IoIosMailUnread/>
-        </p> 
+]
+  const Ourteachers =()=>{
+    return(
+    <>
+    <div style={{width:'100%',height:'100%'}}>
+      <div style={{display:'flex', flexDirection:'row',justifyContent:'space-evenly',alignItems:'center',flexWrap:'wrap'}}>
+          {Teachers.map((item,indx)=>{
+                return(
+                <div style={{width:'20%',height:'auto',display:'grid',placeItems:'center',border:'1px solid grey',borderRadius:'4px',backgroundColor:'rgba(7,3,1,0.1)',padding:'10px',margin:'10px 20px',boxShadow: '0px -6px 12px rgba(0, 0, 0, 0.06)'}}>
+                <img width='200px' height='200px'style={{borderRadius:'50%'}} src={item.url} alt='teach'/>
+                <h3 style={{color:'black',fontSize:'20px',paddingTop:'40px'}}>{item.name}</h3>
+              </div>
+              )
+          })}
+
       </div>
-      <div className='flex-container'>
-        <div className='form-div'>
-          <h3><b>Contact Information</b></h3><hr></hr>
-          <h5>
-            <b>Email us at</b> : abc@zyx.com <br></br><br></br>
-            <b>Contact</b> : +91-9000000000 <br></br><br></br>
-            <b>Address</b> : Sadhana Charitable Trust, Qr No- IV 27/3 Unit-I, Bhubaneswar, Odisha 751001<br></br>
-            <hr></hr>
-            <a href='https://www.facebook.com/people/Sadhana-Charitable-Trust/100067687247213/' ><FaFacebookSquare /> Follow on FB</a>
-          </h5>
-        </div>
-        <div className='form-div'>
-        <h3><b>Please leave a message for us!</b></h3><hr></hr>
-        <label>Name</label><br></br>
-        <input type="text" placeholder='Name'/><br></br><br></br>
-        <label>Email</label><br></br>
-        <input type="email" placeholder='Email'/><br></br><br></br>
-        <label>Contact No</label><br></br>
-        <input type="text" placeholder='Contact'/><br></br><br></br>
-        <label>What's your message?</label><br></br>
-        <textarea></textarea> <br></br>
-        <Button>Submit</Button>
-        </div>
-      </div>
+
+  
+
     </div>
+    </>
+    )
+  } 
+
+  return (
+    <>
+      <div style={{width:'100vw',minHeight:'100vh',height:'auto',background:'aqua',padding:'20px'}}>
+        <h1>Our Teachers</h1>
+          {<Ourteachers/>}
+      </div>
+    </>
   )
 }
 
