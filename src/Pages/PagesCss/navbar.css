@@ -121,8 +121,13 @@
     display: none;
   }
 
+  .menu-link ul{
+    justify-content: space-around;
+  }
+
   .menu-link ul li{
     font-size: 1.8rem;
+    
   }
 
   .menu-link ul li a{
@@ -130,6 +135,7 @@
     color: purple;
     transition: 0.5s;
   }
+
   .logo,
   .social-media ul{
     height: 8rem;
@@ -164,8 +170,13 @@
       grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
     }
 
+    .menu-link ul{
+      justify-content: space-around;
+    }
+  
     .menu-link ul li{
       font-size: 1.8rem;
+      
     }
   
     .menu-link ul li a{

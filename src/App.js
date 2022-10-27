@@ -10,6 +10,7 @@ import ContactUs from './Pages/ContactUs';
 import NavBar from './Pages/NavBar';
 import Success from './Pages/Success';
 import Failiure from './Pages/Failiure';
+import SchoolCelebration from './Pages/SchoolCelebration'
 // import TopNavbar from './Pages/TopNavbar';
 import 'react-slideshow-image/dist/styles.css'
 function App() {
@@ -26,6 +27,7 @@ function App() {
            <Route path="/contactus" element={<ContactUs />} />
            <Route path="/success" element={<Success />} />
            <Route path="/failiure" element={<Failiure />} />
+           <Route path="SchoolCelebration" element={<SchoolCelebration/>}/>
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,0 +1,62 @@
+
+.contact-us{
+    padding: 30px;
+    background-image: url('https://img.freepik.com/free-photo/business-people-casual-meeting_53876-101882.jpg?size=626&ext=jpg&ga=GA1.2.392852730.1666451175');
+    height: auto;
+    
+    size: 10em;
+}
+
+.jumbotron{
+align-items: center;
+justify-content: center;
+background-color: rgb(255, 232, 236);
+}
+
+.flex-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-div{
+    background-color: rgb(235, 198, 198);
+    opacity: 80%;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.form-div:first-child{
+    margin-right: 20px;
+}
+
+.form-div h3 {
+    color:teal;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.form-field input{
+    width: 300px;
+    height: 300px;
+    border: 2px solid;
+    border-color: teal;
+}
+
+.form-field textarea{
+    width: 170px;
+    height: 60px;
+    border: 2px solid;
+    border-color: teal;
+    border-radius: 3px ;
+}
+
+.form-field label{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.submit-contact{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}

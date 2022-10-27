@@ -8,8 +8,13 @@ h1{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+h3 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+}
+
 .slide-container{
-    padding: 100px;
+    box-shadow: inset;
     background-color: whitesmoke;
        
 }
@@ -21,7 +26,64 @@ h1{
 
 }
 
-h3 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: whitesmoke;
+.overlap-div{
+   margin-top: -80px; 
+}
+
+.back-img{
+    opacity: 80%;
+    height: 100px;
+    border-radius: 50%;
+    padding-left: 90px;
+    padding-right: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel{
+    padding: 80px;
+    margin-top: -80px; 
+    scroll-behavior: smooth;
+}
+
+.img-div{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* 
+.card{
+    padding: 100px;
+    
+    background-image:url("https://img.freepik.com/free-vector/service-24-7-concept-illustration_114360-7500.jpg?w=740&t=st=1666459022~exp=1666459622~hmac=26308fd77901b9fef89c1787b6ef1362fc674d4c61d0900274a7c5710504648b") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+.display-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+
+}
+
+@media (max-width: 900px) {
+    
+.display-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding: 20px;
+
+}
+}
+
+@media (max-width: 600px) {
+    .display-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    
+    }
 }

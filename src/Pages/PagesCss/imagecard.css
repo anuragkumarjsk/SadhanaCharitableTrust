@@ -1,0 +1,31 @@
+.image-card{
+    
+    height: auto;
+    width: 200px;
+    background-color:bisque;
+}
+
+
+
+.title :hover{
+    background-color: azure;
+}
+
+.image-card h1{
+    padding-top: 80px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: brown;
+}
+
+.view-img-button{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 15px;
+    color: firebrick;
+}
