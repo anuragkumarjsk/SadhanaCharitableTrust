@@ -11,8 +11,14 @@ import NavBar from './Pages/NavBar';
 import Success from './Pages/Success';
 import Failiure from './Pages/Failiure';
 import SchoolCelebration from './Pages/SchoolCelebration'
+import SchoolPhotos from './Pages/SchoolPhotos'
+import VolunteeringPhotos from './Pages/VolunteeringPhotos'
+import AwardsPhotos from './Pages/AwardsPhotos';
 // import TopNavbar from './Pages/TopNavbar';
 import 'react-slideshow-image/dist/styles.css'
+
+
+
 function App() {
   return (
     <div className="App">
@@ -27,7 +33,11 @@ function App() {
            <Route path="/contactus" element={<ContactUs />} />
            <Route path="/success" element={<Success />} />
            <Route path="/failiure" element={<Failiure />} />
-           <Route path="SchoolCelebration" element={<SchoolCelebration/>}/>
+           <Route path="/SchoolCelebration" element={<SchoolCelebration/>}/>
+           <Route path="/School" element={<SchoolPhotos/>}/>
+           <Route path='/Volunteering' element={<VolunteeringPhotos/>}/>
+           <Route path='/Awards' element={<AwardsPhotos/>}/>
+           
         </Routes>
       </BrowserRouter>
     </div>

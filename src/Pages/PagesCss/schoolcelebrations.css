@@ -1,33 +1,14 @@
-
-.celebrations-gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:20 20;
-    height:  auto;
-    width: auto;
-    background-color:thistle;
-    border-radius: 2px;
-    padding: 5px;
-}
-
-.slide-container{
-    box-shadow: inset;
-    background-color: whitesmoke;
-       
-}
-
-.carousel{
-    padding: 20px;
-    margin-top: 180px; 
-    scroll-behavior: smooth;
+.school-celeb{
+    padding: 10px;
     height: auto;
-    width: 100%;
-}
-
-
-.activity-img img{
+    width: auto;
     justify-content: center;
-    height: 600px;
-    width: 100%;
 
 }
+
+.school-celeb Button {
+    position: relative;
+    justify-content: center;
+    margin-right:16px;
+}
+
