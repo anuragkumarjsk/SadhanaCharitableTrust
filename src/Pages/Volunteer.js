@@ -1,10 +1,11 @@
-import React,{useEffect,useState} from 'react'
+import React,{useEffect,useRef,useState} from 'react'
 
 import axios from 'axios'
 import './PagesCss/volunteer.css'
 import { useNavigate } from 'react-router-dom'
 function Volunteer() {  
   const navigate = useNavigate()
+  const formref = useRef(null)
   const [buttondisabled,setbuttondisabled]=useState(true)
   const [formstate,setformstate]=useState({
       name: '',
@@ -46,6 +47,12 @@ useEffect(() => {
   }
 }, [formstate])
 
+useEffect(() => {
+  formref.current.focus()
+  return () => {
+  }
+}, [])
+
 
   return (
     <div className='volunteer'>
@@ -53,7 +60,7 @@ useEffect(() => {
         <form className="form" >
           <div className='form-field'>
             <label>Name</label><br></br>
-            <input placeholder='Enter your name' type="text" name = "name" value = {formstate.name} onChange={changeHandler} />
+            <input ref={formref} placeholder='Enter your name' type="text" name = "name" value = {formstate.name} onChange={changeHandler} />
           </div>
           <div className='form-field'>
             <label>Contact No</label><br></br>
