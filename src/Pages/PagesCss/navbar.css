@@ -74,7 +74,7 @@
 
   .menu-link ul li a{
     text-transform: capitalize;
-    color: purple;
+    color: black;
     transition: 0.5s;
   }
 
@@ -108,7 +108,23 @@
     
   }
   
-
+  .navlinkactive{
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 3px;
+    border:1px solid rgba(55, 24, 135,0.7);
+    font-family: 'GTWalsheimPro-Thin';
+    color: rgb(55, 24, 135);
+  }
+  .navlinkpassive{
+    font-size: 18px;
+    padding: 3px;
+    margin-right: 10px;
+    border:1px solid white;
+    font-family: 'GTWalsheimPro-Thin';
+    color: rgba(55, 24, 135,0.7);
+  
+  }
   /* Responsive css */
   @media (max-width: 1080px) {
   
@@ -132,7 +148,7 @@
 
   .menu-link ul li a{
     text-transform: capitalize;
-    color: purple;
+    color: black;
     transition: 0.5s;
   }
 
@@ -160,7 +176,25 @@
   } */
 
 }
+.navlinkactive{
+  font-size: 17px;
+  padding: 3px;
+  margin-right: 8px;
 
+  border:1px solid rgba(55, 24, 135,0.7);
+  font-family: 'GTWalsheimPro-Thin';
+  background-color: rgb(164, 151, 197);
+}
+.navlinkpassive{
+  font-size: 17px;
+  padding: 3px;
+  margin-right: 8px;
+  
+  border:1px solid white;
+  font-family: 'GTWalsheimPro-Thin';
+  color: rgba(55, 24, 135,0.7);
+
+}
 /* Responsive css */
 @media (max-width: 998px) {
     
@@ -181,7 +215,7 @@
   
     .menu-link ul li a{
       text-transform: capitalize;
-      color: purple;
+      color: black;
       transition: 0.5s;
     }
 
@@ -212,4 +246,20 @@
     } */
   
   }
+  .navlinkactive{
+    font-size: 15px;
+    padding: 3px;
+    margin-right: 8px;
+    border:1px solid rgba(55, 24, 135,0.7);
+    font-family: 'GTWalsheimPro-Thin';
+    color: rgb(55, 24, 135);
+  }
+  .navlinkpassive{
+    font-size: 15px;
+    padding: 3px;
+    margin-right: 8px;
+    border:1px solid white;
+    font-family: 'GTWalsheimPro-Thin';
+    color: rgba(55, 24, 135,0.7);
   
+  }
