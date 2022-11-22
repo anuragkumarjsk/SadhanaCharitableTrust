@@ -1,14 +1,15 @@
 .image-card{
-    
     height: auto;
     width: 200px;
     background-color:bisque;
+    margin-top: 15px;
 }
 
 
 
 .title :hover{
     background-color: azure;
+    
 }
 
 .image-card h1{

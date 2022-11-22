@@ -7,6 +7,7 @@ import {SchoolImages} from './SchoolPhotos'
 import {VolunteeringPhoto} from './VolunteeringPhotos'
 import { FaBorderAll } from 'react-icons/fa';
 import { AwardsPhoto } from './AwardsPhotos';
+import {SportsImages} from './SportsPhotos'
 
 function PicGallery(props) {
   let images;
@@ -18,6 +19,8 @@ function PicGallery(props) {
     images = VolunteeringPhoto
   else if (props.display === 'AwardsPhotos')
     images = AwardsPhoto
+  else if (props.display === 'SportsImages')
+    images = SportsImages
   return (
     <div>
       

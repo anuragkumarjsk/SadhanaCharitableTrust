@@ -4,6 +4,7 @@ import School from '../Images/ActivityImages/School1.jpg'
 import SC from '../Images/ActivityImages/SC3.jpg'
 import imgv1 from '../Images/ActivityImages/V1.jpg'
 import imga1 from '../Images/ActivityImages/A1.jpg'
+import imgsports1 from '../Images/ActivityImages/S1.jpg'
 import './PagesCss/activities.css'
 import ImageCard from "./ImageCard";
 import 'bootstrap/dist/css/bootstrap.css';
@@ -20,6 +21,7 @@ export default function Activities() {
       <ImageCard activity="School Images" photoIcon={School} link='/School'/>
       <ImageCard activity="Volunteering" photoIcon={imgv1} link='/Volunteering'/>
       <ImageCard activity="Awards" photoIcon={imga1} link='/Awards'/>
+      <ImageCard activity="Sports" photoIcon={imgsports1} link='/Sports'/>
       </div>
       
      

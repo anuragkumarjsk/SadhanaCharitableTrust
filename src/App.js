@@ -14,6 +14,7 @@ import SchoolCelebration from './Pages/SchoolCelebration'
 import SchoolPhotos from './Pages/SchoolPhotos'
 import VolunteeringPhotos from './Pages/VolunteeringPhotos'
 import AwardsPhotos from './Pages/AwardsPhotos';
+import SportsPhotos from './Pages/SportsPhotos';
 // import TopNavbar from './Pages/TopNavbar';
 import 'react-slideshow-image/dist/styles.css'
 
@@ -37,6 +38,7 @@ function App() {
            <Route path="/School" element={<SchoolPhotos/>}/>
            <Route path='/Volunteering' element={<VolunteeringPhotos/>}/>
            <Route path='/Awards' element={<AwardsPhotos/>}/>
+           <Route path='/Sports' element={<SportsPhotos/>}/>
            
         </Routes>
       </BrowserRouter>

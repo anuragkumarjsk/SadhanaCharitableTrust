@@ -7,7 +7,7 @@ import { celebrationImages } from './SchoolCelebration';
 import {SchoolImages} from './SchoolPhotos'
 import {VolunteeringPhoto} from './VolunteeringPhotos'
 import { AwardsPhoto } from './AwardsPhotos';
-
+import {SportsImages} from './SportsPhotos'
 
 function CarouselGallery(props) {
   let images;
@@ -19,7 +19,9 @@ function CarouselGallery(props) {
     images = VolunteeringPhoto
   else if (props.display === 'AwardsPhotos')
     images = AwardsPhoto
-
+    else if (props.display === 'SportsImages')
+    images = SportsImages
+    
   return (
     <div>
       <div className='slide-container'>

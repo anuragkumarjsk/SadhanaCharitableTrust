@@ -6,7 +6,23 @@ function Home() {
   const [students, setStudents] = useState(0);
   const [volunteers, setVolunteer] = useState(0);
   const [awards, setAward] = useState(0);
-  const Count = [{'teacherNo':20, 'teacherVar':teacher, 'teacherFun': setTeacher},]
+  // const Count = [{'teacherNo':20, 'teacherVar':teacher, 'teacherFun': setTeacher},]
+
+  // useEffect(() =>{
+  //   let count = teacher <10 &&  setInterval(()=>{
+  //     setTeacher(prevCount => {return prevCount+1})
+  //     //console.log(count)
+  //   },2000) 
+  //   console.log('count - ',count)
+  //   // let studentCount = students< 200 && setInterval(()=>{
+  //   //   setStudents(prevCount => {return prevCount+1})
+  //   // },10) 
+
+      
+  //   return () => clearInterval(count)
+    
+  // },[teacher,students])
+
 
   useEffect(() =>{
     let count = teacher<20 &&  setInterval(()=>{
@@ -44,7 +60,7 @@ function Home() {
         backgroundAttachment:'fixed'
        }}>
       
-          <h1 style={{color:'purple', 
+          <h1 style={{color:'purple',
               alignContent:'center',
               fontFamily:' Tahoma',
               paddingTop:'60px',
