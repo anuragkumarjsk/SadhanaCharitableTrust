@@ -62,8 +62,8 @@ function ContactUs() {
       <div style={{display:'flex', flexDirection:'row',justifyContent:'space-evenly',alignItems:'center',flexWrap:'wrap'}}>
           {Teachers.map((item,indx)=>{
                 return(
-                <div style={{width:'25%',height:'auto',display:'grid',placeItems:'center',border:'1px solid grey',borderRadius:'4px',backgroundColor:'palevioletred',padding:'10px',margin:'10px 20px',boxShadow: '0px -6px 12px rgba(0, 0, 0, 0.06)'}}>
-                <img width='200px' height='200px'style={{borderRadius:'50%'}} src={item.url} alt='teach'/>
+                <div style={{width:'auto',height:'auto',display:'grid',placeItems:'center',border:'1px solid grey',borderRadius:'4px',backgroundColor:'palevioletred',padding:'10px',margin:'10px 20px',boxShadow: '0px -6px 12px rgba(0, 0, 0, 0.06)'}}>
+                <img width='auto' height='200px' style={{borderRadius:'50%'}} src={item.url} alt='teach'/>
                 <h3 style={{color:'black',fontSize:'20px',paddingTop:'40px'}}>{item.name}</h3>
               </div>
               )
@@ -99,8 +99,8 @@ function ContactUs() {
 
         <button onClick={submitForm}><b>Submit</b></button>
         </div>
-        
-          <img src={logo} style={{justifyContent:'right', alignItems:'right'}}/>
+          
+        <img src={logo} />
         
       </div>
       <div className='teachers-div'>

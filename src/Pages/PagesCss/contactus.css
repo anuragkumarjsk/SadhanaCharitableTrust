@@ -1,9 +1,9 @@
 .contact-form{
     height: auto;
-    width: 900px;
+    width: auto;
     background-color: pink;
     border: 2px solid palevioletred;
-    margin: auto;
+    margin-left: 20px;
     margin-top: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -12,20 +12,22 @@
     opacity: 95%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
 }
 
 .contact-form img{
+    grid-column: 2/3;
     justify-items: center;
     align-items: center;
-    justify-content: center;
-    grid-column: 2/3;
+    justify-content: center;  
     border-radius: 50%;
-    
-
+    max-width: 100%;
+    place-items: center;
+   
 }
 
 .contact-form input, textarea{
-    width: 400px;
+    width: auto;
     height: 30px;
     border: dotted 2px palevioletred;
     border-radius: 5px;
@@ -38,7 +40,7 @@
 }
 
 .contact-form hr{
-    width: 400px;
+    width:auto;
     
 }
 .contact-form button{

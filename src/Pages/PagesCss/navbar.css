@@ -27,6 +27,10 @@
   .main-nav {
     width: 100%;
     height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     display: grid;
     grid-template-columns: 15rem 1fr 2fr 1fr 15rem;  /*10rem whitespace at ends then 1fractional unit space for logo and social media links and 2fr for menu */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -55,6 +59,7 @@
   .logo-img{
     height: 9rem;
     border-radius: 4.5rem;
+    max-width: 100%;
   }
 
   .menu-link {
@@ -125,11 +130,12 @@
     color: rgba(55, 24, 135,0.7);
   
   }
-  /* Responsive css */
+
   @media (max-width: 1080px) {
   
   .main-nav{
     height: 8rem;
+    width: auto;
     grid-template-columns: 2rem 1fr 3fr 1fr 2rem;
   }
 
@@ -154,7 +160,7 @@
 
   .logo,
   .social-media ul{
-    height: 8rem;
+    height: 7rem;
     align-items: center;
     justify-content: center;
   }
@@ -162,18 +168,9 @@
   .logo-img{
     height: 7rem;
     border-radius: 3.5rem;
+    max-width: 100%;
   }
 
-  /* .trust-name{
-    height: 10rem;
-    width: 100%;
-    display: grid;
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-    grid-column: 3/4;
-    color: brown;
-  } */
 
 }
 .navlinkactive{
@@ -195,17 +192,18 @@
   color: rgba(55, 24, 135,0.7);
 
 }
-/* Responsive css */
+
 @media (max-width: 998px) {
     
   
     .main-nav{
       height: 7rem;
       grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
+      width: auto;
     }
 
     .menu-link ul{
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
   
     .menu-link ul li{
@@ -221,7 +219,7 @@
 
     .logo
     {
-      height: 7rem;
+      height: 5rem;
     }
     
     .social-media .social-media-desktop{
@@ -232,18 +230,9 @@
     .logo-img{
       height: 6rem;
       border-radius: 3rem;
+      max-width: 100%;
     }
 
-    /* .trust-name{
-      height: 7rem;
-      width: 100%;
-      display: grid;
-      font-size: 10px;
-      align-items: left;
-      justify-content: left;
-      grid-column: 3/4;
-      color: brown;
-    } */
   
   }
   .navlinkactive{
@@ -262,4 +251,4 @@
     font-family: 'GTWalsheimPro-Thin';
     color: rgba(55, 24, 135,0.7);
   
-  }
+  } 
