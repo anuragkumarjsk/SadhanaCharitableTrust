@@ -6,22 +6,7 @@ function Home() {
   const [students, setStudents] = useState(0);
   const [volunteers, setVolunteer] = useState(0);
   const [awards, setAward] = useState(0);
-  // const Count = [{'teacherNo':20, 'teacherVar':teacher, 'teacherFun': setTeacher},]
-
-  // useEffect(() =>{
-  //   let count = teacher <10 &&  setInterval(()=>{
-  //     setTeacher(prevCount => {return prevCount+1})
-  //     //console.log(count)
-  //   },2000) 
-  //   console.log('count - ',count)
-  //   // let studentCount = students< 200 && setInterval(()=>{
-  //   //   setStudents(prevCount => {return prevCount+1})
-  //   // },10) 
-
-      
-  //   return () => clearInterval(count)
-    
-  // },[teacher,students])
+  
 
 
   useEffect(() =>{
@@ -57,14 +42,16 @@ function Home() {
     <div >
       <div className="jumbotron" style={{
         backgroundImage: `url(${backImage})`,
-        backgroundAttachment:'fixed'
+        backgroundAttachment:'fixed',
+        opacity:'70%'
        }}>
       
-          <h1 style={{color:'purple',
+          <h1 style={{color:'green',
               alignContent:'center',
               fontFamily:' Tahoma',
               paddingTop:'60px',
-              fontSize:'50px'}}>
+              opacity:'95%',
+              fontSize:'80px'}}>
           <b>SADHANA CHARITABLE TRUST</b>
           </h1>
         
@@ -82,6 +69,15 @@ function Home() {
        <div className='info'>
        <p><h2>{awards}+</h2>Awards received</p>
        </div>
+       <div style={{backgroundColor:'wheat', margin:'15px', padding:'7px'}}>
+       <h3><b>ABOUT SADHANA CHARITABLE TRUST</b></h3><p>Sadhana Charitable Trust is working towards building a empowered and vibrant society by educating tribal and under previldged kids through our dedicated efforts of all the associates.
+          we not only educate them but also inculcate social sensitivity and prepare them to face the competitive environment through extra curricular and activity based learning.
+          We have started a library, adult education centre and and old age home for the benefit of the society.
+ 
+          Let's join hands to give back to the society...
+      
+        </p>
+      </div>
       </div>
     </div>
   )

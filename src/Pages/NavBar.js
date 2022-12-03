@@ -14,7 +14,7 @@ function NavBar() {
         <a href='/'><img  alt='logo' className='logo-img' rel="apple-touch-icon" align='left' src={logo} href='../../public/logo.jpg' /></a> 
       </div>
       <div className='trust-name'>
-        <h2 >Sadhana Charitable Trust</h2>
+        <p>Sadhana Charitable Trust</p>
       </div>
       <div className='menu-link'>
         <ul>
