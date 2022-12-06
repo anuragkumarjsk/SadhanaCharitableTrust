@@ -3,6 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: auto;
+    min-height: 100vh;
 }
 .form{
     width: 70%;

@@ -39,7 +39,7 @@ function Home() {
 
   return (
     
-    <div >
+    <div style={{minHeight:'100vh', height:'auto'}}>
       <div className="jumbotron" style={{
         backgroundImage: `url(${backImage})`,
         backgroundAttachment:'fixed',
@@ -70,7 +70,11 @@ function Home() {
        <p><h2>{awards}+</h2>Awards received</p>
        </div>
        <div style={{backgroundColor:'wheat', margin:'15px', padding:'7px'}}>
-       <h3><b>ABOUT SADHANA CHARITABLE TRUST</b></h3><p>Sadhana Charitable Trust is working towards building a empowered and vibrant society by educating tribal and under previldged kids through our dedicated efforts of all the associates.
+       <h1 style={{fontWeight:700}}>
+            " Educate to Empower "
+       </h1> 
+       <h3><b style={{fontSize:'25px'}}>ABOUT SADHANA CHARITABLE TRUST</b></h3>
+       <p style={{fontSize:'20px'}}>Sadhana Charitable Trust is working towards building a empowered and vibrant society by educating tribal and under previldged kids through our dedicated efforts of all the associates.
           we not only educate them but also inculcate social sensitivity and prepare them to face the competitive environment through extra curricular and activity based learning.
           We have started a library, adult education centre and and old age home for the benefit of the society.
  

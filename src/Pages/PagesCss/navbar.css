@@ -115,6 +115,7 @@
   
   .navlinkactive{
     font-size: 18px;
+    font-weight: 700;
     margin-right: 10px;
     padding: 3px;
     border:1px solid rgba(55, 24, 135,0.7);
@@ -123,6 +124,7 @@
   }
   .navlinkpassive{
     font-size: 18px;
+    font-weight: 700;
     padding: 3px;
     margin-right: 10px;
     border:1px solid white;

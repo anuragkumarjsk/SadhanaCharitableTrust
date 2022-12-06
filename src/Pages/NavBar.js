@@ -18,11 +18,11 @@ function NavBar() {
       </div>
       <div className='menu-link'>
         <ul>
-          <li><Link to='/'><a href='/' className={location.pathname==='/'?'navlinkactive':'navlinkpassive'}>Home</a></Link></li>
-          <li><Link to='/activities'><a href='/activities' className={location.pathname==='/activities'?'navlinkactive':'navlinkpassive'}>Activities</a></Link></li>
-          <li><Link to='/donate'><a href='/donate' className={location.pathname==='/donate'?'navlinkactive':'navlinkpassive'}>Donate</a></Link></li>
-          <li><Link to='/volunteer'><a href='/volunteer' className={location.pathname==='/volunteer'?'navlinkactive':'navlinkpassive'}>Volunteer</a></Link></li>
-          <li><Link to='/contactus'><a href='/contactus' className={location.pathname==='/contactus'?'navlinkactive':'navlinkpassive'}>Contact</a></Link></li>
+          <li ><Link to='/'><a href='/' className={location.pathname==='/'?'navlinkactive':'navlinkpassive'}>Home</a></Link></li>
+          <li ><Link to='/activities'><a href='/activities' className={location.pathname==='/activities'?'navlinkactive':'navlinkpassive'}>Activities</a></Link></li>
+          <li ><Link to='/donate'><a href='/donate' className={location.pathname==='/donate'?'navlinkactive':'navlinkpassive'}>Donate</a></Link></li>
+          <li ><Link to='/volunteer'><a href='/volunteer' className={location.pathname==='/volunteer'?'navlinkactive':'navlinkpassive'}>Volunteer</a></Link></li>
+          <li ><Link to='/contactus'><a href='/contactus' className={location.pathname==='/contactus'?'navlinkactive':'navlinkpassive'}>Contact</a></Link></li>
         </ul>
       </div>
         {/*Social media links*/}

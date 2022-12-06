@@ -58,7 +58,7 @@ function ContactUs() {
     
     return(
     <>
-    <div style={{width:'100%',height:'100%'}}>
+    <div style={{width:'100%',height:'100%' }}>
       <div style={{display:'flex', flexDirection:'row',justifyContent:'space-evenly',alignItems:'center',flexWrap:'wrap'}}>
           {Teachers.map((item,indx)=>{
                 return(
@@ -79,7 +79,7 @@ function ContactUs() {
   } 
 
   return (
-    <>
+    <div style={{padding:'20px 0px'}}>
     <h1 style={{color:'blueviolet', fontFamily:'revert-layer'}}>Contact Us</h1>
     <div className='contact-form'>
       
@@ -108,7 +108,7 @@ function ContactUs() {
           {<Ourteachers/>}
       </div>
       
-    </>
+    </div>
   )
 }
 
