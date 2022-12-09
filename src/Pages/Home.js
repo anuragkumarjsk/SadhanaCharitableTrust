@@ -1,60 +1,62 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import backImage from '../Images/Background1.jpg'
+import school from '../Images/ActivityImages/School2.jpg'
 import './PagesCss/home.css'
 function Home() {
   const [teacher, setTeacher] = useState(0);
   const [students, setStudents] = useState(0);
   const [volunteers, setVolunteer] = useState(0);
   const [awards, setAward] = useState(0);
-  
+
 
 
   useEffect(() =>{
     let count = teacher<20 &&  setInterval(()=>{
       setTeacher(prevCount => {return prevCount+1})
-    },100)     
-    return () => clearInterval(count)  
+    },100)
+    return () => clearInterval(count)
   },[teacher])
 
   useEffect(() =>{
     let studentCount = students < 200 && setInterval(()=>{
       setStudents(prevCount => {return prevCount+1})
-    },10)  
+    },10)
     return () => clearInterval(studentCount)
   },[students])
 
   useEffect(() =>{
     let volunteerCount = volunteers < 100 && setInterval(()=>{
       setVolunteer(prevCount => {return prevCount+1})
-    },10)  
+    },10)
     return () => clearInterval(volunteerCount)
   },[volunteers])
 
   useEffect(() =>{
     let awardCount = volunteers < 50 && setInterval(()=>{
       setAward(prevCount => {return prevCount+1})
-    },40)  
+    },40)
     return () => clearInterval(awardCount)
   },[awards])
 
   return (
-    
+
     <div style={{minHeight:'100vh', height:'auto'}}>
       <div className="jumbotron" style={{
         backgroundImage: `url(${backImage})`,
         backgroundAttachment:'fixed',
         opacity:'70%'
        }}>
-      
-          <h1 style={{color:'green',
+
+          <h1 style={{color:'white',
               alignContent:'center',
               fontFamily:' Tahoma',
-              paddingTop:'60px',
+              padding:'20px',
               opacity:'95%',
-              fontSize:'80px'}}>
+              fontSize:'60px',
+              textSizeAdjust:'auto'}}>
           <b>SADHANA CHARITABLE TRUST</b>
           </h1>
-        
+
       </div>
       <div className='info-card'>
        <div className='info'>
@@ -72,15 +74,29 @@ function Home() {
        <div style={{backgroundColor:'wheat', margin:'15px', padding:'7px'}}>
        <h1 style={{fontWeight:700}}>
             " Educate to Empower "
-       </h1> 
+       </h1>
        <h3><b style={{fontSize:'25px'}}>ABOUT SADHANA CHARITABLE TRUST</b></h3>
-       <p style={{fontSize:'20px'}}>Sadhana Charitable Trust is working towards building a empowered and vibrant society by educating tribal and under previldged kids through our dedicated efforts of all the associates.
+       <p style={{fontSize:'20px',padding:'10px'}}>Sadhana Charitable Trust is working towards building a empowered and vibrant society by educating tribal and under previldged kids through our dedicated efforts of all the associates.
           we not only educate them but also inculcate social sensitivity and prepare them to face the competitive environment through extra curricular and activity based learning.
           We have started a library, adult education centre and and old age home for the benefit of the society.
- 
+
           Let's join hands to give back to the society...
-      
+
         </p>
+      </div>
+      <div style={{backgroundColor:'wheat', margin:'15px', padding:'7px'}}>
+      <h3><b style={{fontSize:'25px'}}>BIRSA MUNDA SCHOOL</b></h3>
+      <p style={{fontSize:'20px',padding:'10px'}}>
+      <b>Birsa Munda School was the brain child of few philanthropic NIT Rourkela alumni  and other philanthropist which started as a small inititiative since 2001 and took shape in 2006. We have successfully completed 20+ years to educate the needy students by the support of our associates. The school is running by the kind support of our associates/volunteers with nearly 200 students.
+The support from few professors of NIT Rourkela and young students have made it possible to complete the journey of 20+ years through many ups and downs.
+Sadhana Charitable Trust has made it possible to run the initiative "Educate to Empower" for educating the kids of this tribal and poor community.
+<br></br>
+We are happy to inform you all that few of our kids are studying/working in reputed organizations. 
+<br></br>
+Let's unite to strengthen the cause for building a socially sensitive ecosystem which helps in nation building.
+We thank our associates for their great support for giving back to the society...
+<br></br>
+Jai Hind.</b></p>
       </div>
       </div>
     </div>

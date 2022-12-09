@@ -1,10 +1,23 @@
+.img-card-img-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    width: auto;
+}
+
+.img-card-img-div img{
+    height:300px;
+    width:300px;
+    padding:5px;
+    margin:10px;
+    margin-right:10px;
+}
+
 .image-card{
     height: auto;
-    width: 320px;
+    width: auto;
     background-color:bisque;
-    margin-top: 15px;
-    border-radius:10px;
-    overflow: hidden;
+    margin:8px;
 }
 
 
@@ -14,13 +27,7 @@
     
 }
 
-.image-card h1{
-    padding-top: 80px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: brown;
-}
+
 
 .view-img-button{
     padding-top: 30px;
@@ -31,4 +38,44 @@
 p {
     font-size: 15px;
     color: firebrick;
+}
+
+@media (max-width: 900px) {
+    .img-card-img-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        width: auto;
+    }
+
+    .img-card-img-div img{
+        height:100px;
+        width:auto;
+        padding:5px;
+        margin:10px;
+        margin-right:10px;
+    }
+
+    .image-card{
+        height: auto;
+        width: auto;
+        background-color:bisque;
+        margin: 5px;
+    }
+    
+    .title :hover{
+        background-color: azure;
+        
+    }
+
+    .view-img-button{
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+    
+    p {
+        font-size: 10px;
+        color: firebrick;
+    }
 }

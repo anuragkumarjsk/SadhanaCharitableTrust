@@ -27,12 +27,7 @@ function PicGallery(props) {
       <div className='celebrations-gallery'>
         
           {
-          images.map((img, ind)=><img src= {img.url} style={{
-          marginRight: '20px',
-          height: '190px',
-          width:'220px',
-          padding:'10px'
-          }} ></img>)
+          images.map((img, ind)=><img src= {img.url} ></img>)
           }
         
         

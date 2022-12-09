@@ -12,12 +12,30 @@ h1{
     padding: 50px;
     background-color: aliceblue;
     height: auto;
-    width: 100%;
+    width: auto;
 }
 
 .activity-img img{
     justify-content: center;
-    height: 600px;
+    height: auto;
     width: 100%;
+    size: auto;
 
+}
+
+@media (max-width: 900px) {
+    .slide-container{
+        padding: 30px;
+        background-color: aliceblue;
+        height: auto;
+        width: auto;
+    }
+    
+    .activity-img img{
+        justify-content: center;
+        height: 200px;
+        width: 100%;
+        size: auto;
+    
+}
 }

@@ -13,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 export default function Activities() {
   return (
 
-    <div style={{width:'100vw',height:'auto',minHeight:'100vh',paddingBlock:'16px'}}>
+    <div>
   
       <h1>Image Gallery</h1>
       <div className="display-cards">

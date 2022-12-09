@@ -12,19 +12,10 @@ const ImageCard = (props) =>  {
   }
   return (
     <div className='image-card'>
-    <div className='img-card-img-div'></div>
-    <div className='title'><h1
-    style={{
-          backgroundImage: `url(${props.photoIcon})`,
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition:'center',
-          backgroundSize:'250px',
-          justifyContent: 'center',
-          height: '170px',
-          width:'100%',
-          marginTop:'15px'
-        }}></h1></div>
-    <div className='view-img-button'><p style={{fontSize:'18px'}} >{props.activity}</p><Button style={{fontSize:'15px'}} onClick={()=>{routeChange(link)}}>View all Photos</Button></div>
+    <div className='img-card-img-div'>
+    <img src={props.photoIcon}></img>
+    </div>
+    <div className='view-img-button'><p>{props.activity}</p><Button onClick={()=>{routeChange(link)}}>View all Photos</Button></div>
     </div>
   )
 }
