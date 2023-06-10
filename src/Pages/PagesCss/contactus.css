@@ -27,8 +27,12 @@
 }
 
 .contact-form input, textarea{
-    width: auto;
-    height: 30px;
+    min-width: 25vw;
+    max-width: 50vw;
+    width: 45vw;
+    height: 40px;
+    font-size:20px;
+    padding: 10px;
     border: dotted 2px palevioletred;
     border-radius: 5px;
 }
@@ -44,8 +48,9 @@
     
 }
 .contact-form button{
-    padding:5px;
+    padding:15px 25px;
     color:black;
+    font-size: 17px;
     background-color:rgb(255, 232, 236);
 }
 
