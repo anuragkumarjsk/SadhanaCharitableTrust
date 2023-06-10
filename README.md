@@ -75,3 +75,6 @@ https://www.freecodecamp.org/news/react-and-googlesheets/#:~:text=To%20get%20sta
 
 ### public url of sheet
 https://docs.google.com/spreadsheets/d/1VcxfhPRRWAjKnMKSYDOqkMDlca82wxIV8CW8jd2bhQY/edit?usp=sharing
+
+### netlify url
+https://luxury-blini-c12c84.netlify.app/
