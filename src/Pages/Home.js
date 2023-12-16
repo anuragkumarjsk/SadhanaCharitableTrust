@@ -106,7 +106,7 @@ Jai Hind.</b></p>
              <img style={{borderRadius:'50%',width:'250px',height:'250px'}} src={BBPanda} alt='bb panda'/>
              <p style={{ fontSize:'20px',padding:'10px'}}>
                Our School is blessed to have such a great visionary leader, who has dedicated years of his life for nurturing the youth. Under his able leadership our school is growing and progressing day by day, towarda a better future 
-               and is also contributing to the nation by preparing youth that is educated, rational, contructive and patriotic. Our students wherever they go will carry with them the
+               and is also contributing to the nation by preparing youth that is educated, rational, constructive and patriotic. Our students wherever they go will carry with them the
                blessings and the teaching that has been provided to them by inspiring personalities like Mr Panda and will ensure to do good for the community wherever they go. We are grateful for all the sacrifices made by Mr Panda.  
              </p>
              </div>
