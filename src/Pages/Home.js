@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react'
 import backImage from '../Images/Background1.jpg'
 import school from '../Images/ActivityImages/School2.jpg'
 import BBPanda from '../Assets/Images/BBPanda.jpeg'
+import PhotgraphyContest from '../Assets/Images/PhotographyContest.jpeg'
 
 import './PagesCss/home.css'
 function Home() {
@@ -110,6 +111,14 @@ Jai Hind.</b></p>
                blessings and the teaching that has been provided to them by inspiring personalities like Mr Panda and will ensure to do good for the community wherever they go. We are grateful for all the sacrifices made by Mr Panda.  
              </p>
              </div>
+      </span>
+      <span>
+        <h2 style={{fontSize:'40px'}}>Sadhana Mobile Photography Contest</h2>
+        <img style={{width:'550px',height:'550px'}} src={PhotgraphyContest} alt='photography contest'/>
+        <p style={{fontSize:'30px'}}>To register for the contest click below</p>
+        <button style={{backgroundColor:'pink', padding: '5px',textAlign: 'center'}}>
+        <a style={{fontSize:'40px'}} target="_blank" href='https://docs.google.com/forms/d/e/1FAIpQLScTifLH89nERtz856NFuoTVULr2TlfiYAMHpmJv8D767DnQAg/viewform'>REGISTER</a>
+        </button>
       </span>
 
       </div>
