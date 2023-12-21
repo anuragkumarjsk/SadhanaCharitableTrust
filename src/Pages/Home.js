@@ -10,6 +10,8 @@ function Home() {
   const [students, setStudents] = useState(0);
   const [volunteers, setVolunteer] = useState(0);
   const [awards, setAward] = useState(0);
+  const ismobile = window.screen.width < 576 ? true:false ;
+
 
 
 
@@ -100,26 +102,26 @@ Let's unite to strengthen the cause for building a socially sensitive ecosystem 
 We thank our associates for their great support for giving back to the society...
 <br></br>
 Jai Hind.</b></p>
-      <span>
-             <h2 style={{fontSize:'40px'}}>Man behind the Mission</h2>
-             <h4 style={{fontSize:'25px'}}>B.B.Panda</h4>
-             <div style={{display:'flex',flexDirection:'row',justifyContent:'flex-start',alignItems:'center'}}>
+             <h2 style={{width:'100%',textAlign:'center', fontSize:'40px'}}>Man behind the Mission</h2>
+            <div style={{display:'flex',flexDirection : ismobile ? 'column':'row', justifyContent:'flex-start' ,alignItems:'center'}}>
+             {/* <div style={{display:'flex',flexDirection:'row',justifyContent:'flex-start',alignItems:'center'}}> */}
              <img style={{borderRadius:'50%',width:'250px',height:'250px'}} src={BBPanda} alt='bb panda'/>
              <p style={{ fontSize:'20px',padding:'10px'}}>
                Our School is blessed to have such a great visionary leader, who has dedicated years of his life for nurturing the youth. Under his able leadership our school is growing and progressing day by day, towarda a better future 
                and is also contributing to the nation by preparing youth that is educated, rational, constructive and patriotic. Our students wherever they go will carry with them the
                blessings and the teaching that has been provided to them by inspiring personalities like Mr Panda and will ensure to do good for the community wherever they go. We are grateful for all the sacrifices made by Mr Panda.  
              </p>
-             </div>
-      </span>
-      <span>
+             {/* </div> */}
+      </div>
+      <h1 style={{color:'black', textDecoration:'underline', fontSize:ismobile?'30px':'66px', fontFamily:'fantasy'}}>Ongoing Contests</h1>
+      <div style={{width:'100%',display:'flex',flexDirection:'column', justifyContent:'center',alignItems:'center'}}>
         <h2 style={{fontSize:'40px'}}>Sadhana Mobile Photography Contest</h2>
-        <img style={{width:'550px',height:'550px'}} src={PhotgraphyContest} alt='photography contest'/>
+        <img style={{width:'90%'}} src={PhotgraphyContest} alt='photography contest'/>
         <p style={{fontSize:'30px'}}>To register for the contest click below</p>
         <button style={{backgroundColor:'pink', padding: '5px',textAlign: 'center'}}>
         <a style={{fontSize:'40px'}} target="_blank" href='https://docs.google.com/forms/d/e/1FAIpQLScTifLH89nERtz856NFuoTVULr2TlfiYAMHpmJv8D767DnQAg/viewform'>REGISTER</a>
         </button>
-      </span>
+      </div>
 
       </div>
       </div>
